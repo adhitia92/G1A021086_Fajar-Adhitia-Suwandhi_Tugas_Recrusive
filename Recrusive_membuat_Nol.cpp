@@ -9,7 +9,7 @@ static int hitungan=0;
         if(angka%10==0)
         hitungan++;
 
-        zero(angka/10);
+        nol(angka/10);
     }
     return hitungan;
 }
