@@ -1,17 +1,17 @@
 #include<iostream>
 using namespace std;
-int zero(int angka)
+int nol(int angka)
 {
-static int hitung=0;
+static int hitungan=0;
     if(angka>0)
     {
 
         if(angka%10==0)
-        hitung++;
+        hitungan++;
 
         zero(angka/10);
     }
-    return hitung;
+    return hitungan;
 }
 int main()
 {
@@ -21,5 +21,5 @@ int main()
     cout<<"Masukkan angka :";
     cin>>n;
     cout<<">>>>>>>>>>>>>>>>>>>>>>>>>>"<<endl;
-    cout<<"Banyak angka nol : "<<zero(n);
+    cout<<"Banyak angka nol : "<<nol(n);
 }
